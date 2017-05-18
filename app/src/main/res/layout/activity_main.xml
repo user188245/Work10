@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.work10.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/stamp"
+            android:text="Stamp"
+            android:tag="STAMP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onClick"
+            android:text="ERASER"
+            android:tag="ERASER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onClick"
+            android:text="OPEN"
+            android:tag="OPEN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:background="#ff0000"
+            android:onClick="onClick"
+            android:text="SAVE"
+            android:tag="SAVE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <com.example.user.work10.MyDrawingView
+        android:layout_weight="1"
+        android:id="@+id/myDrawing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </com.example.user.work10.MyDrawingView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="onClick"
+            android:tag="ROTATE"
+            android:text="ROTATE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onClick"
+            android:text="MOVE"
+            android:tag="MOVE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onClick"
+            android:text="SCALE"
+            android:tag="SCALE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onClick"
+            android:text="SKEW"
+            android:tag="SKEW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
